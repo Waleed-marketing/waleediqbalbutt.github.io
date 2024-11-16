@@ -8,17 +8,32 @@
 body {
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
-    background: linear-gradient(135deg, #f4f4f9, #ffffff);
     color: #333;
+    background: linear-gradient(135deg, #f4f4f9, #ffffff);
 }
 
+h1, h2 {
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+a {
+    color: #8c52ff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Hero Section */
 .hero {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 2rem 1rem;
+    padding: 3rem 1rem;
     background: linear-gradient(to right, #ffffff, #f3f9ff);
-    overflow: hidden;
     position: relative;
 }
 
@@ -36,16 +51,14 @@ body {
 }
 
 .hero h1 {
-    font-size: 2.5rem;
+    font-size: 3rem;
     color: #00008b;
-    text-transform: uppercase;
 }
 
 .hero h2 {
-    font-size: 2rem;
+    font-size: 1.8rem;
     color: #8c52ff;
-    margin: 0.5rem 0;
-    text-transform: uppercase;
+    margin-bottom: 1rem;
 }
 
 .hero p {
@@ -56,16 +69,83 @@ body {
 }
 
 .hero .image-wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    max-width: 400px;
 }
 
 .hero .image-wrapper img {
-    max-width: 100%;
+    width: 100%;
     border-radius: 30px;
     object-fit: cover;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* About Section */
+.about, .projects, .contact {
+    padding: 3rem 1rem;
+    text-align: center;
+    background: #f9f9ff;
+}
+
+.about h2, .projects h2, .contact h2 {
+    font-size: 2.5rem;
+    color: #00008b;
+    margin-bottom: 1rem;
+}
+
+.about p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+}
+
+/* Projects Section */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.project-card {
+    background: white;
+    border-radius: 15px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.project-card h3 {
+    font-size: 1.5rem;
+    color: #8c52ff;
+    margin-bottom: 1rem;
+}
+
+/* Contact Section */
+.contact-links {
+    list-style: none;
+    margin-top: 1rem;
+}
+
+.contact-links li {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.contact-links a {
+    color: #8c52ff;
+}
+
+/* Footer */
+footer {
+    padding: 1.5rem 1rem;
+    background: #333;
+    color: white;
+    text-align: center;
+    font-size: 1rem;
 }
 
 /* Responsive Design */
@@ -73,10 +153,6 @@ body {
     .hero .container {
         flex-direction: column;
         text-align: center;
-    }
-
-    .hero .content {
-        margin-bottom: 2rem;
     }
 
     .hero h1 {
@@ -89,5 +165,9 @@ body {
 
     .hero p {
         font-size: 1rem;
+    }
+
+    .projects-grid {
+        grid-template-columns: 1fr;
     }
 }
