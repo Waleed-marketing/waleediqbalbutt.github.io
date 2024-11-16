@@ -8,103 +8,86 @@
 body {
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
+    background: linear-gradient(135deg, #f4f4f9, #ffffff);
     color: #333;
-    background-color: #f4f4f9;
 }
 
-header {
-    background-color: #4CAF50;
-    color: white;
-    text-align: center;
-    padding: 2rem 0;
-}
-
-header h1 {
-    font-size: 2.5rem;
-}
-
-header p {
-    font-size: 1.2rem;
-    margin-top: 0.5rem;
-}
-
-nav ul {
+.hero {
     display: flex;
     justify-content: center;
-    list-style: none;
-    margin-top: 1rem;
+    align-items: center;
+    padding: 2rem 1rem;
+    background: linear-gradient(to right, #ffffff, #f3f9ff);
+    overflow: hidden;
+    position: relative;
 }
 
-nav ul li {
-    margin: 0 1rem;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-size: 1rem;
-}
-
-nav ul li a:hover {
-    text-decoration: underline;
-}
-
-.section {
-    padding: 2rem 0;
-    text-align: center;
-}
-
-.container {
+.hero .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
     width: 90%;
-    max-width: 1100px;
-    margin: 0 auto;
+    max-width: 1200px;
 }
 
-.projects-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 1.5rem;
-    margin-top: 2rem;
+.hero .content {
+    max-width: 500px;
 }
 
-.project-card {
-    background-color: #fff;
-    border: 1px solid #ddd;
-    padding: 1.5rem;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s, box-shadow 0.3s;
+.hero h1 {
+    font-size: 2.5rem;
+    color: #00008b;
+    text-transform: uppercase;
 }
 
-.project-card:hover {
-    transform: translateY(-5px);
+.hero h2 {
+    font-size: 2rem;
+    color: #8c52ff;
+    margin: 0.5rem 0;
+    text-transform: uppercase;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    color: #333;
+    line-height: 1.5;
+}
+
+.hero .image-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero .image-wrapper img {
+    max-width: 100%;
+    border-radius: 30px;
+    object-fit: cover;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 1rem 0;
-    margin-top: 2rem;
-}
-
-footer p {
-    font-size: 0.9rem;
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
-    header h1 {
+    .hero .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero .content {
+        margin-bottom: 2rem;
+    }
+
+    .hero h1 {
         font-size: 2rem;
     }
 
-    nav ul {
-        flex-direction: column;
-        align-items: center;
+    .hero h2 {
+        font-size: 1.5rem;
     }
 
-    nav ul li {
-        margin: 0.5rem 0;
+    .hero p {
+        font-size: 1rem;
     }
 }
