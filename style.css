@@ -282,6 +282,9 @@ section {
 .about-containers,
 .about-details-container {
   display: flex;
+}
+
+.text-container{
   flex-direction: column;   /* stacks items vertically */
   justify-content: center;  /* centers content vertically within its parent */
   height: auto;
