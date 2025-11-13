@@ -265,26 +265,45 @@ section {
 
 #about {
   position: relative;
+  padding: 2rem 1rem;
 }
 
+/* Outer container */
 .about-containers {
-  gap: 2rem;
-  margin-bottom: 2rem;
-  margin-top: 2rem;
-}
-
-.about-details-container {
+  display: flex;
+  flex-wrap: wrap; /* Makes it responsive */
   justify-content: center;
-  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  margin: 2rem 0;
 }
 
-.about-containers,
+/* Inner content */
 .about-details-container {
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 600px; /* Keeps text readable */
 }
 
+/* Profile or image */
 .about-pic {
   border-radius: 2rem;
+  max-width: 350px;
+  width: 100%;
+  height: auto;
+}
+
+/* 📱 Responsive design */
+@media (max-width: 768px) {
+  .about-containers {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-details-container {
+    align-items: center;
+  }
 }
 
 .arrow {
