@@ -265,45 +265,30 @@ section {
 
 #about {
   position: relative;
-  padding: 2rem 1rem;
 }
 
-/* Outer container */
 .about-containers {
-  display: flex;
-  flex-wrap: wrap; /* Makes it responsive */
-  justify-content: center;
-  align-items: center;
   gap: 2rem;
-  margin: 2rem 0;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
 }
 
-/* Inner content */
+.about-details-container {
+  justify-content: center;
+  flex-direction: column;
+}
+
+.
+.about-containers,
 .about-details-container {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  max-width: 600px; /* Keeps text readable */
-}
-
-/* Profile or image */
-.about-pic {
-  border-radius: 2rem;
-  max-width: 350px;
-  width: 100%;
+  flex-direction: column;   /* stacks items vertically */
+  justify-content: center;  /* centers content vertically within its parent */
   height: auto;
 }
 
-/* 📱 Responsive design */
-@media (max-width: 768px) {
-  .about-containers {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .about-details-container {
-    align-items: center;
-  }
+.about-pic {
+  border-radius: 2rem;
 }
 
 .arrow {
