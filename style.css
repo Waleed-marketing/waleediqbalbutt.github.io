@@ -284,12 +284,6 @@ section {
   display: flex;
 }
 
-.text-container{
-  flex-direction: column;   /* stacks items vertically */
-  justify-content: center;  /* centers content vertically within its parent */
-  height: auto;
-}
-
 .about-pic {
   border-radius: 2rem;
 }
