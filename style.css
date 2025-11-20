@@ -70,8 +70,6 @@ a:hover {
 
 .logo:hover {
   cursor: pointer;
-  text-decoration: underline;
-  text-underline-offset: 1rem;
 }
 
 /* HAMBURGER MENU */
@@ -197,7 +195,7 @@ section {
 
 .section__text__p1 {
   text-align: center;
-  font-size: 1.3rem;
+  font-size: 1.4rem;
 }
 
 .section__text__p2 {
