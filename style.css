@@ -63,7 +63,7 @@ a:hover {
 }
 
 .logo {
-  font-family: 'League Spartan' !important;
+  font-family: 'League Spartan', sans-serif !important;
   font-size: 2rem;
   font-weight: bold;
 }
