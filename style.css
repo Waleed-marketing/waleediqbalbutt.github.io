@@ -63,12 +63,15 @@ a:hover {
 }
 
 .logo {
+  font-family: 'League Spartan' !important;
   font-size: 2rem;
   font-weight: bold;
 }
 
 .logo:hover {
-  cursor: default;
+  cursor: pointer;
+  text-decoration: underline;
+  text-underline-offset: 1rem;
 }
 
 /* HAMBURGER MENU */
@@ -194,6 +197,7 @@ section {
 
 .section__text__p1 {
   text-align: center;
+  font-size: 1.3rem;
 }
 
 .section__text__p2 {
