@@ -27,6 +27,10 @@ a,
 }
 
 /* DESKTOP NAV */
+#desktop-nav{
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
 
 nav,
 .nav-links {
